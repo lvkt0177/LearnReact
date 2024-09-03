@@ -1,24 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './Component/Header/index';
+import { DeA1, DeA1_2 } from './Component/Body/DeA1';
+import { DeA2 } from './Component/Body/DeA2';
+import { MyName, MyWifeWithVariableCss } from './Component/Body/MyName';
+
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='mt-5'>Lê Thịnh</h1>
+    <div className='container'>
+      <Header />
+      <div className='row'>
+        <div className='col-12 text-center text-success'>
+          <DeA1 />
+          <DeA1_2 />
+          <MyName />
+          <MyWifeWithVariableCss />
+        </div>
+      </div>
+
+      <DeA2 />
+
+      <Body />
+
+      <MyContent />
+
+      <Content_1 />
+
     </div>
   );
 }
 
 
-export const Header = () => {
+export const Content_1 = () => {
   return (
-    <div className='container text-success mb-5'>This is my Header
-      <div>Home | Logo</div>
-    </div>
+    <p>Content_1 is here</p>
   )
-}
-
-
+};
 
 export const Body = () => {
   return (
@@ -27,8 +45,6 @@ export const Body = () => {
     </div>
   )
 }
- 
-
 
 export const Footer = () => {
   return (
@@ -39,6 +55,14 @@ export const Footer = () => {
   )
 }
 
-
+export const MyContent = () => {
+  return (
+    <div className='container mt-5'>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente velit dolores debitis nisi beatae perspiciatis, qui ipsam sequi impedit quas corrupti eaque tempora quos magnam temporibus minus atque, natus eligendi.</p>
+    </div>
+  )
+}
 
 export default App;
+
+
