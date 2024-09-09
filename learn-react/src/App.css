@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav-menu a:hover{
+  border-bottom: 1px solid black;
+  transition: 0.9s ease-in-out;
+}
+
